@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">    
+<html manifest="demo.appcache"> 
+<head>    
+	<title>Music For Web</title>   
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel='stylesheet' href='/stylesheets/home_style.css' />
+		<script type="text/javascript" language="javascript" src="/javascripts/jquery-2.0.3.js"></script>
+        <script type="text/javascript" language="javascript" src="/javascripts/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" language="javascript" src="/javascripts/home_page.js"></script>
+		<script type="text/javascript" language="javascript" src="/javascripts/home_page_2.js"></script>
+		<script type="text/javascript" language="javascript" src="/javascripts/home_page_3.js"></script>
+		<script type="text/javascript" language="javascript" src="/javascripts/home_page_4.js"></script>
+		<script type="text/javascript" language="javascript" src="/javascripts/home_page_router.js"></script>
+		
+		<script type="text/jscript" language="javascript">
+		
+			$(function() //页面加载
+			{ 
+				document.getElementById("type=1").setAttribute('class', 'active_button');
+				callback_song_list();
+			}); 
+		</script>
+	
+</head>    
+	<body> 
+	
+		<div id="Layer1">
+			
+			<img id="title_pic" src="/images/title.png"  alt="Welcome to music for web" />
+			
+			<div id="search_box">
+				<input id="search_input" placeholder="请输入你想搜索的歌曲或艺术家">
+				<button id="search_button" class="search_button" onclick="search_button()">搜 索</button>
+				<button id="search_button_more" class="search_button" onclick="search_button_more()">+more</button>
+				<div id="engine_box" style="visibility:hidden">
+					<button id="e_1" class="search_button" style="position:absolute; left:0px;" onclick="chose_api()">百度</button>
+					<button id="e_2" class="search_button" style="position:absolute; left:70px;" onclick="chose_api()">豆瓣</button>
+					<button id="e_3" class="search_button" style="position:absolute; left:140px;" onclick="chose_api()">腾讯</button>
+					<button id="e_4" class="search_button" style="position:absolute; left:210px;" onclick="chose_api()">酷狗</button>
+					<button id="e_5" class="search_button" style="position:absolute; left:280px;" onclick="engine_back()">返回</button>
+				</div><!-- 选择搜索引擎 -->
+			</div><!-- 搜索框 -->
+			
+			<audio id="player1" controls preload="auto"></audio><!-- 音乐播放器 -->
+			
+		</div><!-- Layer1 导航栏 -->
+		
+		<div id="Layer2">
+			
+			<div id="clear_box">
+				
+				<div id="search_result" style="visibility:hidden">以下是查询结果：</div><!-- 显示搜索结果 -->
+				
+				<div id="r_button_list">
+					<button id="type=1" class="type_button" style="position:absolute; left:0px;" onclick="button_list()">新歌榜</button>
+					<button id="type=2" class="type_button" style="position:absolute; left:170px;" onclick="button_list()">热歌榜</button>
+					<button id="type=21" class="type_button" style="position:absolute; left:340px;" onclick="button_list()">欧美榜</button>
+					<button id="type=12" class="type_button" style="position:absolute; left:510px;" onclick="button_list()">爵士榜</button>
+				</div><!-- r_button_list 类型按钮 -->
+				
+				<button id="back_button" class="button_back"  onclick="back_to()">更 多</button><!-- 返回按钮 -->
+				
+				<div style="position:absolute; margin-top:60px; margin-left:10px; width:1100px; height:570px; overflow:hidden;">
+					<div id="recommend_list">
+					
+						<div id="info_box" style="visibility:hidden">
+						
+							<img id="pic_box">
+							</img><!-- 显示头像 -->
+							
+							<div id="detail_box">
+							</div ><!-- 显示详细信息 -->
+							
+							<div id="lrc_list_box">
+								<textarea id="lrc_box">
+								</textarea>
+							</div><!-- 显示歌词或列表 -->
+							
+						</div>
+						
+					</div><!-- 推荐目录 -->
+				</div><!-- 推荐目录外壳 -->
+				
+			</div>
+			
+		</div><!-- Layer2 内容框 -->
+	</body>    
+</html>  

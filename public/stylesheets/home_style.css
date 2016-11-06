@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-color:#D7D7D7;
+	text-align:center;
+}
+		
+#Layer1
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100px;
+	background-color:#333333;
+}
+	
+#Layer2
+{
+	position:absolute;
+	left:0px;
+	top:100px;
+	width:100%;
+	height:100%;
+	background-color:#D7D7D7;
+	text-align:center;
+}
+	
+#player1
+{
+	position:absolute;
+	left:955px;
+	top:35px;
+	border-radius:5px;
+	width:280px;
+	height:30px;
+}
+	
+#search_box
+{
+	position:absolute;
+	left:450px;
+	top:35px;
+	width:385px;
+	height:30px;
+}
+	
+#search_input
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:330px;
+	height:100%;
+	border:0px;
+	border-radius:10px;
+	background-color:rgb(242,242,242,0.0);
+	color:#333;
+	text-align: center;
+	font-size: 17px;	
+}
+::-webkit-input-placeholder 
+{ 
+	color: #D7D7D7;
+}
+		
+#search_button
+{
+	position:absolute;
+	left:330px;
+	top:0px;
+}
+
+#search_button_more
+{
+	position:absolute;
+	left:400px;
+	top:0px;
+}
+
+#engine_box
+{
+	position:absolute;
+	left:400px;
+	top:0px;
+	width:350px;
+	height:100%;
+	background-color:#FFF;
+}
+
+.search_button
+{
+	width:70px;
+	height:100%;
+	border:0px;
+	font-size: 16px;
+	background-color:#333;
+	color:#ccc;
+}
+.search_button:hover{
+	font-size: 17px;
+	color:#E4E4E4;
+	text-shadow: 0px 0px 5px #00CCFF;
+}
+.search_button:active{
+	font-size: 16px;
+	color:#ccc;
+	text-shadow: 0px 0px 0px #00CCFF;
+}
+
+#title_pic
+{
+	position:absolute;
+	left:120px;
+	top:25px;
+	width:160px;
+	height:55px;
+}
+
+#clear_box
+{
+	position:static;
+	margin:0 auto;
+	margin-top: 10px;
+	width:1120px;
+	height:640px;
+	background-color:#FFF;
+	overflow: hidden;
+}
+
+#search_result
+{
+	position:absolute;
+	width:300px;
+	height:50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: #F2F2F2;
+	text-align:left;
+	color: #444;
+	font-size: 20px;
+	text-align:center;
+	line-height: 50px;
+}
+
+#back_button
+{
+	position:absolute;
+	margin-top: 10px;
+	margin-left: 1009px;  /* ie和其他浏览求不同 其他浏览器设置为450px */
+}
+
+#return_list_button
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+.button_back
+{
+	width:100px;
+	height:50px;
+	border:0px;
+	background-color: #999;
+	color: #ccc;
+	font-size: 16px;
+}
+.button_back:hover
+{
+	background-color: #F2F2F2;
+	color: #444;
+	font-size: 17px;
+	text-decoration: underline;
+}
+	
+#r_button_list
+{
+	position:absolute;
+	width:660px;
+	height:50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color:{242,242,242,0.0};
+}
+.type_button
+{
+	width:150px;
+	height:50px;
+	border:0px;
+	font-size: 16px;
+	background-color:#999;
+	color:#ccc;
+}
+.type_button:hover
+{
+	font-size: 17px;
+	background-color:#F2F2F2;
+	color:#666;
+}
+.type_button:focus
+{
+	font-size: 16px;
+	background-color:#F2F2F2;
+	color:#666;
+}
+.active_button
+{
+	width:150px;
+	height:50px;
+	border:0px;
+	font-size: 16px;
+	background-color:#F2F2F2;
+	color:#666;
+}
+	
+#recommend_list
+{
+	position:absolute;
+	width:1120px;
+	height:570px;
+	background-color:#F2F2F2;
+	overflow:auto;
+}
+
+#info_box
+{
+	position:absolute;
+	width:500px;
+	height:500px;
+	top:35px;
+	left:280px;
+	background-color:#FFF;
+}
+
+#pic_box
+{
+	position:absolute;
+	width:160px;
+	height:160px;
+	top:45px;
+	left:45px;
+	cursor: pointer;
+}
+
+#detail_box
+{
+	position:absolute;
+	width:250px;
+	height:230px;
+	top:270px;
+	left:0px;
+	background-color:#FFF;
+	text-align:center;
+	border:0px;
+	font-size:16px;
+	color: #555;
+}
+
+#lrc_list_box
+{
+	position:absolute;
+	width:260px;
+	height:500px;
+	top:0px;
+	left:250px;
+	background-color:#FFF;
+	overflow: hidden;
+	
+}
+
+#lrc_box
+{
+	position:absolute;
+	width:240px;
+	height:460px;
+	top:20px;
+	left:0px;
+	background-color:#FFF;
+	word-wrap:break-word;
+	word-break:break-all;
+	readonly="readonly";
+	border:0px;
+	color:#666;
+}
+
+.pic_style
+{
+	width:160px;
+	height:160px;
+	border-radius:80px;
+}
+.pic_style:hover
+{
+	cursor: pointer;
+}
+
+.s_name_style
+{
+	width:220px;
+	height:35px;
+	border:0px;
+	background-color:#F2F2F2;
+	text-align:center;
+	color:#444;
+	font-size:16px;
+}
+.s_name_style:hover
+{
+	text-decoration:underline;
+}
+
+.a_name_style
+{
+	width:220px;
+	height:35px;
+	border:0px;
+	background-color:#F2F2F2;
+	text-align:center;
+	color:#999;
+	font-size:12px;
+}
+.a_name_style:hover
+{
+	text-decoration:underline;
+}
+
+.recommend_box
+{
+	width:220px;
+	height:285px;
+	background-color:#F2F2F2;
+}
